@@ -11,3 +11,21 @@ for ($i = 1; $i <= 100; $i++) {
     }
 }
 ?>
+
+<?php
+$a = 0;
+$b = 1;
+$count = 0;
+
+while ($count < 10) {
+    $next = $a + $b;
+    $a = $b;
+    $b = $next;
+
+    if ($a % 2 == 0) {
+        echo $a . "\n";
+    }
+    
+    $count++;
+}
+?>
